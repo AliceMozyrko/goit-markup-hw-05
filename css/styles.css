@@ -483,8 +483,9 @@ justify-content: center;
 .icon-link-footer:focus {
   background-color: #31D0AA;
 }
-.subscribe{
-  display: inline-block;
+
+.footer-form{
+  display: flex;
 }
 .contacts-footer{
 color: var(--WHITE, #FFF);
@@ -493,8 +494,17 @@ color: var(--WHITE, #FFF);
   line-height: 1.5;
   letter-spacing: 0.02em;
     margin-left: 80px;
+    margin-bottom: 16px;
+}
+.footer-form{
+  gap: 24px;
 }
 .input-email{
+  color: var(--WHITE, #FFF);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20;
+    letter-spacing: 0.04em;
   width: 264px;
   height: 40px;
   border-radius: 4px;
@@ -502,33 +512,36 @@ color: var(--WHITE, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-left: 16px;
-  margin-top: 16px;
   margin-left: 80px;
     outline: transparent;
+}
+.input-email::placeholder{
+  color: #ffffff;
 }
 .input-email:focus{
     border-color: #4D5AE5;
 }
 .subs-btn{
+  display: flex;
   color: var(--WHITE, #FFF);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-  min-width: 117px; 
+  min-width: 165px; 
   height: 40px;
   border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
     border: none;
     font-family: inherit;
-    position: relative;
     padding-right: 24px;
     margin-left: 24px;
+    align-items: center;
+    justify-content: center;
 }
 .send-icon{
   fill: #FFFFFF;
-  position: absolute;
-  padding-left: 16px;
+  margin-left: 16px;
 }
 /* ------BACKDROP-------- */
 .backdrop{
